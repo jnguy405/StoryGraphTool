@@ -1,58 +1,64 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "Whispers Beyond the Veil",
+    "Credits": "Created by Jenalee Nguyen (jnguy405@ucsc.edu).",
+    "InitialLocation": "Intro",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Intro": {
+            "Body": "When you were young, they told you both your parents were gone. But your grandfather kept a secret: your father died, yes, but your mother was not human. She was something else. Elven. Today, he gives you a weathered journal, the first key in a legacy buried deep in forest and memory.\n\nYou stand at the edge of the woods where your mother once vanished. Something ancient stirs in the trees. You feel it calling...",
             "Choices": [
-                {
-                    "Text": "South",
-                    "Target": "Porter"
-                }
+                { "Text": "Begin Your Journey", "Target": "Reverie Entrance" }
             ]
         },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
+        "Reverie Entrance": {
+            "Body": "You stand at the Reverie Entrance, the forest thick with secrets and longing. Your grandfather’s tale echoes in your mind.",
             "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Kresge"
-                },
-                {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
-                }
+                { "Text": "Venture deeper to Virala Pond", "Target": "Virala Pond" }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
+        "Virala Pond": {
+            "Body": "Calm water reflects a broken sky. Dragonflies flit over lily pads. A narrow trail leads deeper.",
             "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Porter"
-                },
-                {
-                    "Text": "South",
-                    "Target": "Oakes"
-                }
+                { "Text": "Follow the trail to Thimoraya Crossing", "Target": "Thimoraya Crossing" }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "Thimoraya Crossing": {
+            "Body": "Three ancient stones glow faintly beneath moss. Choose two to activate a path: Yellow, Red, or Blue."
+        },
+        "Kwethya Cascade": {
+            "Body": "The waterfall thunders nearby. Behind it, a cave hides a glowing crystal. As you remove it, the cave begins to tremble.",
             "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
-                },
-                {
-                    "Text": "South",
-                    "Target": "Beyond"
-                }
+                { "Text": "Escape back to Thimoraya Crossing", "Target": "Thimoraya Crossing" },
+                { "Text": "Take the secret path", "Target": "Filiesa Hollow" }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "Lisahali Falls": {
+            "Body": "Misty spray kisses your skin. The green path leads only here, a peaceful dead-end with no hidden secrets.",
+            "Choices": [
+                { "Text": "Return to Thimoraya Crossing", "Target": "Thimoraya Crossing" }
+            ]
+        },
+        "Aurelem Veil": {
+            "Body": "The right-most path ends in shimmering air. You sense a presence, watching. A hidden trail leads further.",
+            "Choices": [
+                { "Text": "Take the trail to Filiesa Hollow", "Target": "Filiesa Hollow" },
+                { "Text": "Return to Thimoraya Crossing", "Target": "Thimoraya Crossing" }
+            ]
+        },
+        "Filiesa Hollow": {
+            "Body": "Soft moss underfoot, glowing spores in the air. From here, a vine-covered gate waits in the shadows.",
+            "Choices": [
+                { "Text": "Approach the Nethmil Gate", "Target": "Nethmil Gate" },
+                { "Text": "Return to Aurelem Veil", "Target": "Aurelem Veil"}
+            ]
+        },
+        "Nethmil Gate": {
+            "Body": "You approach the gate, its presence unwavering in the stillness, standing tall and resolute.",
+            "Choices": [
+                { "Text": "Enter Everile’s Heart", "Target": "Everile’s Heart", "UnlockCondition": "hasCrystal"}
+            ]
+        },
+        "Everile’s Heart": {
+            "Body": "A golden oasis of bioluminescent flora opens before you. Elves and fairies greet you with radiant joy. You are Home."
         }
     }
 }
